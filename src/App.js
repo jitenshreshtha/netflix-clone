@@ -1,8 +1,15 @@
+import "./App.scss";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
     <div>
-      <h1>This is Netflix clone project </h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
